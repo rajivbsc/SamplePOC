@@ -25,6 +25,9 @@
             "menu":[
               "src/menu"
             ],
+            "mobiles":[
+              "src/app/mobiles"
+            ],
             "styles": [
               "src/styles.css"
             ],
@@ -84,6 +87,9 @@
             ],
              "menu":[
               "src/menu"
+            ],
+            "mobiles":[
+              "src/app/mobiles"
             ]
           }
         },
