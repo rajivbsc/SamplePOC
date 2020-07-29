@@ -28,6 +28,9 @@
             "mobiles":[
               "src/app/mobiles"
             ],
+            "laptops":[
+              "src/app/laptops"
+            ],
             "styles": [
               "src/styles.css"
             ],
@@ -88,8 +91,12 @@
              "menu":[
               "src/menu"
             ],
+            "laptops":[
+              "src/app/laptops"
+            ],
             "mobiles":[
               "src/app/mobiles"
+              
             ]
           }
         },

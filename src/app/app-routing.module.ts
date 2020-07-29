@@ -3,7 +3,9 @@ import { NgModule,Component } from '@angular/core';
 import {lenovoComponent} from './mobiles/lenovo.component'
 import {nokiaComponent} from './mobiles/nokia.component'
 import {samsungComponent} from './mobiles/samsung.component'
-
+import {compaqLaptopComponent} from './laptops/compaqlaptop.component'
+import {dellLaptopComponent} from './laptops/delllaptop.component'
+import {lenovoLaptopComponent} from './laptops/lenovolaptop.component'
 const routes:Routes=[
 {
     path:'lenovoMobile',
@@ -16,6 +18,21 @@ const routes:Routes=[
 {
     path:'samsungMobile',
     component:samsungComponent
+}
+,
+{
+    path:'compaqLaptop',
+    component:compaqLaptopComponent
+}
+,
+{
+    path:'dellLaptop',
+    component:dellLaptopComponent
+}
+,
+{
+    path:'lenovoLaptop',
+    component:lenovoLaptopComponent
 }
 ,
 {
