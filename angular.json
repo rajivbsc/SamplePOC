@@ -31,6 +31,9 @@
             "laptops":[
               "src/app/laptops"
             ],
+            "rxjsExamples":[
+ "src/app/rxjsExamples"
+            ],
             "styles": [
               "src/styles.css"
             ],

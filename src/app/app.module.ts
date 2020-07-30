@@ -7,9 +7,10 @@ import { HelloComponent } from './hello.component';
 import {footerComponent} from './menu/footer.component'
 import {RouterModule,RouterOutlet} from '@angular/router'
 import {appRoutingModule} from './app-routing.module'
+import {mapExComponent} from './rxjsExamples/mapEx.component'
 @NgModule({
   imports:      [ BrowserModule, FormsModule, appRoutingModule],
-  declarations: [ AppComponent, HelloComponent,footerComponent ],
+  declarations: [ AppComponent, HelloComponent,footerComponent,mapExComponent ],
   bootstrap:    [ AppComponent ],
   schemas:[NO_ERRORS_SCHEMA]
 })
