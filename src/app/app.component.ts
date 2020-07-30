@@ -1,7 +1,7 @@
 import { Component, VERSION } from '@angular/core';
 import {footerComponent} from './menu/footer.component'
 import { of,pipe } from 'rxjs'
-import { map,filter, catchError } from 'rxjs/operators';
+import { map,filter, catchError,retry } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax'
 @Component({
   selector: 'my-app',
@@ -21,16 +21,29 @@ squaredNums.subscribe(x => console.log(x));
 const oddValues = pipe(filter((n:number)=>n%2!=0),map(v => v * v));
 const oddNums = oddValues(nums);
 oddNums.subscribe(x => console.log(x));
-const image = ajax('https://jsonplaceholder.typicode.com/todos/1').pipe(map(res=>{
+const userinfo = ajax('https://jsonplaceholder.typicode.com/todos/').pipe(retry(3),map(res=>{
   if (res.response) {
-    console.log(res.response);
+    for(let item in res.response)
+    {
+   
+    }
+   
   }
 }),
 catchError(err=>of([]))
 );
-image.subscribe({
-  next(x){console.log(x);},
+userinfo.subscribe({
+  next(x){
+    console.log(x);},
   error(err){}
 })
   }
 }
+class userInfo {
+    constructor(public userId: number, public title:string ) {}
+    log(item:userInfo)
+    {
+     console.log('${item.title}');
+    }
+}
+
