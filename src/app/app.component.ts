@@ -23,9 +23,9 @@ const oddNums = oddValues(nums);
 oddNums.subscribe(x => console.log(x));
 const userinfo = ajax('https://jsonplaceholder.typicode.com/todos/').pipe(retry(3),map(res=>{
   if (res.response) {
-    for(let item in res.response)
+    for(var i in res.response)
     {
-   
+   let a = new userInfo(res.response[i].userId,res.response[i].title)
     }
    
   }
@@ -40,10 +40,12 @@ userinfo.subscribe({
   }
 }
 class userInfo {
-    constructor(public userId: number, public title:string ) {}
-    log(item:userInfo)
+    constructor(public userId: number, public title:string ) {
+console.log(title);
+    }
+    log(user:userInfo)
     {
-     console.log('${item.title}');
+     
     }
 }
 
