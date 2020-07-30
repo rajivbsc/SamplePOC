@@ -6,6 +6,7 @@ import {samsungComponent} from './mobiles/samsung.component'
 import {compaqLaptopComponent} from './laptops/compaqlaptop.component'
 import {dellLaptopComponent} from './laptops/delllaptop.component'
 import {lenovoLaptopComponent} from './laptops/lenovolaptop.component'
+import {mapexComponent} from './rxjsExamples/mapex.component'
 const routes:Routes=[
 {
     path:'lenovoMobile',

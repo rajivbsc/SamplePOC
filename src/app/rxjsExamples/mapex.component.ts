@@ -4,10 +4,10 @@ import { map } from 'rxjs/operators';
 import {Component} from '@angular/core'
 @Component
 ({
-  selector:'mapsex',
-  template:'<div>{{squaredNums}}</div>'
+  selector:'mapex',
+  template:'<div></div>'
 })
-export class mapExComponent
+export class mapexComponent
 {
 constructor()
 {

@@ -100,6 +100,9 @@
             "mobiles":[
               "src/app/mobiles"
               
+            ],
+             "rxjsExamples":[
+              "src/app/rxjsExamples"
             ]
           }
         },
