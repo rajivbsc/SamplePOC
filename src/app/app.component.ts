@@ -21,8 +21,8 @@ squaredNums.subscribe(x => console.log(x));
 const oddValues = pipe(filter((n:number)=>n%2!=0),map(v => v * v));
 const oddNums = oddValues(nums);
 oddNums.subscribe(x => console.log(x));
-const image = ajax('https://cdn.jsdelivr.net/gh/rajivbsc/SamplePOC@master/lenovok10.jpg').pipe(map(res=>{
-  if (!res.response) {
+const image = ajax('https://jsonplaceholder.typicode.com/todos/1').pipe(map(res=>{
+  if (res.response) {
     console.log(res.response);
   }
 }),
